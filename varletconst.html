@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Var Let Const </h1>
+
+    
+   <p> Var is function scoped when it is declared within a function. 
+       This means that it is available and can be accessed only within that function.
+
+</p>
+   <p>Let allows you to declare variables that are limited to the scope of a block statement,
+        or expression on which it is used, unlike the var keyword, which defines a variable globally, 
+        or locally to an entire function regardless of block scope.</p>
+
+   <p>Variables declared with the const maintain constant values. 
+       const declarations share some similarities with let declarations.
+       const declarations can only be accessed within the block they were declared.
+
+    </p>
+   
+<script>
+
+    var greeter = "hey hi";
+    var times = 9;
+
+    if (times > 3) {
+        var greeter = "say Hello instead"; 
+    }
+    
+    console.log(greeter)
+
+
+    {
+   let city;
+   let name = "John"; 
+   name = "Roy";
+   console.log("Using Let: ", name);
+}
+console.log(name)
+
+
+const _fruits = ["strawberry", "watermelon"]
+console.log(_fruits)
+_fruits.push('kiwi');
+console.log(_fruits)
+
+
+
+</script>
+
+</body>
+</html>
+
+
+
